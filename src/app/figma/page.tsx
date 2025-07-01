@@ -20,7 +20,7 @@ interface AvatarImageProps {
 }
 
 function AvatarImage({ src, alt }: AvatarImageProps) {
-  return <img className="aspect-square h-full w-full" src={src || "/placeholder.svg"} alt={alt} />
+  return <Image className="aspect-square h-full w-full" src={src || "/placeholder.svg"} alt={alt || ""} width={40} height={40} />
 }
 
 interface AvatarFallbackProps {
@@ -214,7 +214,7 @@ export default function Dashboard() {
               <CardContent className="p-8">
                 <div className="mb-6">
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    So far you've acquired <span className="font-bold text-gray-900">[2000]</span> words and unlocked{" "}
+                    So far you&apos;ve acquired <span className="font-bold text-gray-900">[2000]</span> words and unlocked{" "}
                     <span className="font-bold text-gray-900">[80%]</span> of Chinese with us.
                   </p>
                   <button className="text-orange-400 text-sm hover:underline flex items-center">
@@ -271,8 +271,8 @@ export default function Dashboard() {
             <CardContent className="p-8">
               <div className="mb-6">
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  You've invested <span className="font-bold text-gray-900">[N]/[N]</span> minutes today.{" "}
-                  <span className="font-bold text-gray-900">[There's still time!]</span>
+                  You&apos;ve invested <span className="font-bold text-gray-900">[N]/[N]</span> minutes today. {" "}
+                  <span className="font-bold text-gray-900">[There&apos;s still time!]</span>
                 </p>
                 <button className="text-orange-400 text-sm hover:underline">Daily goals →</button>
               </div>

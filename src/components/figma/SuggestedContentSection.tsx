@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const cards = [
   {
@@ -28,7 +29,7 @@ export default function SuggestedContentSection() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {cards.map((c, i) => (
           <div key={i} className="bg-white rounded-lg shadow p-4 flex flex-col">
-            <img src={c.image} alt="content" className="rounded mb-3 w-full h-32 object-cover" />
+            <Image src={c.image} alt="content" className="rounded mb-3 w-full h-32 object-cover" width={120} height={80} />
             <p className="text-[#718096] text-sm flex-1">{c.description}</p>
             <a href="#" className="mt-3 text-[#4A90E2] font-medium hover:underline">{c.action}</a>
           </div>
