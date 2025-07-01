@@ -1,0 +1,260 @@
+{
+  "system_config": {
+    "design_style": {
+      "color_palette": {
+        "primary_brand_color": "#2D3748",
+        "secondary_brand_color": "#4A90E2",
+        "accent_color": "#F56565",
+        "background_color": "#F7FAFC",
+        "card_background_color": "#FFFFFF",
+        "text_color_dark": "#2D3748",
+        "text_color_light": "#718096",
+        "link_color": "#4A90E2",
+        "progress_bar_fill": "#4A90E2",
+        "progress_bar_background": "#E2E8F0"
+      },
+      "typography": {
+        "font_family": "Montserrat, sans-serif",
+        "heading_font_size": {
+          "h1": "2.25rem",
+          "h2": "1.875rem",
+          "h3": "1.5rem",
+          "h4": "1.25rem",
+          "h5": "1rem"
+        },
+        "body_font_size": "0.875rem",
+        "caption_font_size": "0.75rem",
+        "font_weight": {
+          "regular": 400,
+          "medium": 500,
+          "semi_bold": 600,
+          "bold": 700
+        },
+        "line_height": "1.5"
+      },
+      "iconography": {
+        "icon_set": "FontAwesome or similar (outlined, minimalist)",
+        "icon_color_primary": "#718096",
+        "icon_color_accent": "#4A90E2"
+      },
+      "shadows": {
+        "card_shadow": "0px 4px 6px rgba(0, 0, 0, 0.1)",
+        "button_shadow": "0px 2px 4px rgba(0, 0, 0, 0.1)"
+      },
+      "border_radius": {
+        "default": "8px",
+        "button": "4px"
+      }
+    },
+    "layout_principles": {
+      "grid_system": "12-column grid (implied by content distribution)",
+      "spacing": {
+        "padding_large": "2rem",
+        "padding_medium": "1.5rem",
+        "padding_small": "1rem",
+        "margin_large": "2rem",
+        "margin_medium": "1.5rem",
+        "margin_small": "1rem"
+      },
+      "alignment": "Left-aligned content for main sections, centered elements where appropriate (e.g., call to action buttons within cards)",
+      "responsiveness": "Implied responsive design (adaptive layout for different screen sizes)",
+      "consistency": "Consistent use of card-based layouts and information hierarchy."
+    },
+    "structure_elements": {
+      "header": {
+        "type": "Fixed top navigation bar",
+        "elements": [
+          {
+            "name": "Logo",
+            "position": "left",
+            "text": "WO HUI!"
+          },
+          {
+            "name": "Navigation Links",
+            "position": "left",
+            "links": [
+              "Dashboard",
+              "Courses",
+              "Assignments",
+              "Community"
+            ]
+          },
+          {
+            "name": "User Profile/Notifications",
+            "position": "right",
+            "icons": [
+              "notification_bell",
+              "user_avatar"
+            ]
+          }
+        ],
+        "height": "60px"
+      },
+      "main_content_area": {
+        "type": "Dashboard layout",
+        "sections": [
+          {
+            "name": "Greeting Section",
+            "layout": "single_column",
+            "elements": [
+              {
+                "type": "Heading",
+                "text": "Hello Shylar !"
+              },
+              {
+                "type": "Current Time/Date",
+                "text": "16:22",
+                "sub_text": "October 20th, 2020"
+              }
+            ]
+          },
+          {
+            "name": "Key Metrics Section",
+            "layout": "grid",
+            "columns": 5,
+            "elements": [
+              {
+                "type": "Metric Card",
+                "title": "Characters",
+                "value": "449"
+              },
+              {
+                "type": "Metric Card",
+                "title": "Words",
+                "value": "362"
+              },
+              {
+                "type": "Metric Card",
+                "title": "Sentences",
+                "value": "571",
+                "sub_value": "+11"
+              },
+              {
+                "type": "Metric Card",
+                "title": "Language Points",
+                "value": "0"
+              },
+              {
+                "type": "Metric Card",
+                "title": "Texts",
+                "value": "335"
+              }
+            ]
+          },
+          {
+            "name": "Progress and Activity Section",
+            "layout": "grid",
+            "columns": 3,
+            "elements": [
+              {
+                "type": "Progress Card",
+                "title": "So far you've acquired [2000] words and unlocked [80%] of Chinese with us.",
+                "progress_percentage": 80,
+                "action_button": {
+                  "text": "Growth",
+                  "icon": "arrow_right"
+                }
+              },
+              {
+                "type": "Investment Chart Card",
+                "title": "You've invested [N/N] minutes today. [There's still time!]",
+                "chart_type": "line_graph",
+                "chart_data_labels": [
+                  "Mon",
+                  "Tue",
+                  "Wed",
+                  "Thu",
+                  "Fri",
+                  "Sat",
+                  "Sun"
+                ],
+                "daily_goal": "82min",
+                "daily_goal_label": "Daily goals"
+              },
+              {
+                "type": "Recent Activity Card",
+                "title": "Last time you got to [Range] > [Mountain] > [Section] > [Series Item].",
+                "action_button": {
+                  "text": "Continue"
+                },
+                "notifications_section": {
+                  "title": "By the way, you have N notifications.",
+                  "action_text": "Notifications"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Leaderboard Section",
+            "layout": "single_column",
+            "elements": [
+              {
+                "type": "Text",
+                "text": "You are currently [N]th on the leaderboard with [N]XP."
+              },
+              {
+                "type": "Value",
+                "text": "8",
+                "icon": "caret_up_down"
+              },
+              {
+                "type": "Action Link",
+                "text": "Leaderboard"
+              }
+            ]
+          },
+          {
+            "name": "Suggested Content Section",
+            "layout": "full_width",
+            "heading": {
+              "text": "And we also thought you might be interested in these:",
+              "action_link": "Explore more"
+            },
+            "elements": [
+              {
+                "type": "Content Card",
+                "image": "placeholder_image_1",
+                "description": "Puts learning into the hands of the student and empowers teachers to support them on their personal learning journey.",
+                "action_link": "Read more"
+              },
+              {
+                "type": "Content Card",
+                "image": "placeholder_image_2",
+                "description": "Puts learning into the hands of the student and empowers teachers to support them on their personal learning journey.",
+                "action_link": "Read more"
+              },
+              {
+                "type": "Content Card",
+                "image": "placeholder_image_3",
+                "description": "Puts learning into the hands of the student and empowers teachers to support them on their personal learning journey.",
+                "action_link": "Read more"
+              }
+            ]
+          },
+          {
+            "name": "Footer",
+            "layout": "horizontal_links",
+            "elements": [
+              {
+                "type": "Link",
+                "text": "About"
+              },
+              {
+                "type": "Link",
+                "text": "Privacy Policy"
+              },
+              {
+                "type": "Link",
+                "text": "Terms of Service"
+              },
+              {
+                "type": "Copyright",
+                "text": "© 2020 Wo Hui (Pte) Ltd"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
